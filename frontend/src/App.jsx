@@ -5,6 +5,7 @@ import Register from "./pages/Register";
 
 function App() {
   return (
+    <div className="container">
     <BrowserRouter>
       <Routes>
         {/* Jika pengguna mengunjungi root URL, langsung arahkan mereka ke "/dashboard" */}
@@ -20,6 +21,7 @@ function App() {
         <Route path="login" element={<Login />} />
       </Routes>
     </BrowserRouter>
+    </div>
   );
 }
 
