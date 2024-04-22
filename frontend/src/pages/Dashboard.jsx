@@ -1,9 +1,9 @@
-import Navbar from "../components/navbar"
+import UserLayout from "../layout/UserLayout"
 
 export default function Dashboard(){
-    return(
-        <>
-        <Navbar/>
-        </>
-    )
-};
+return(
+    <UserLayout>  
+            <h1 >Dashboard</h1>
+    </UserLayout>
+)
+}
