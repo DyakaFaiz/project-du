@@ -1,11 +1,10 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-
+import './App.css'
+import Dashboard from './pages/Dashboard'
+import About from './pages/About'
+import { BrowserRouter,Routes,Route,Navigate } from 'react-router-dom'
 function App() {
+
   return (
-    <div className="container">
     <BrowserRouter>
       <Routes>
         {/* Jika pengguna mengunjungi root URL, langsung arahkan mereka ke "/dashboard" */}
@@ -14,15 +13,11 @@ function App() {
         {/* Halaman Dashboard */}
         <Route path="dashboard" element={<Dashboard />} />
 
-        {/* Halaman Register */}
-        <Route path="register" element={<Register />} />
-
-        {/* Halaman Login */}
-        <Route path="login" element={<Login />} />
+        {/* Halaman About */}
+        <Route path="about" element={<About />} />
       </Routes>
     </BrowserRouter>
-    </div>
-  );
+  )
 }
 
-export default App;
+export default App
